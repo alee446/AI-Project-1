@@ -6,7 +6,7 @@ langchain-core
 langchain-community
 langchain-google-genai
 langchain-tavily
-pinecone-client
+pinecone
 tiktoken
 
 # Optional NLP tools
