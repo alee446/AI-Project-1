@@ -2,6 +2,7 @@
 
 import streamlit as st
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 from Agent_1_File_Assistant import main, functions
 
 

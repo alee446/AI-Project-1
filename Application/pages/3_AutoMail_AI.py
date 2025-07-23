@@ -1,6 +1,8 @@
 # email_agent_app.py
 
 import streamlit as st
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
 from Agent_3_Email_Sender.main import agent_executor
 
 

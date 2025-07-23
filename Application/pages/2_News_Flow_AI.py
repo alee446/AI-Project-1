@@ -1,6 +1,8 @@
 # news_agent_app.py
 
 import streamlit as st
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
 from Agent_2_News_Scarper import main
 
 def run_news_agent():
