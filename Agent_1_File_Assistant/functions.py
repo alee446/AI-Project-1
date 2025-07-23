@@ -18,7 +18,6 @@ from langchain.text_splitter import TokenTextSplitter
 
 from langchain_core.output_parsers import StrOutputParser
 
-from pypdf import PyPDFLoader
 
 import streamlit as st
 

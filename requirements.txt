@@ -14,5 +14,5 @@ pinecone
 tiktoken
 
 # Document processing
-pdfplumber
 trafilatura
+pypdf
