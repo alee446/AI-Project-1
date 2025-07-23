@@ -3,8 +3,7 @@
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.schema import HumanMessage, SystemMessage
-from config import GEMINI_API_KEY  # Make sure you store your key here safely
-
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 # ------------------- Setup Gemini --------------------
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
