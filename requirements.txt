@@ -1,4 +1,3 @@
-# Core packages
 streamlit
 requests
 google-generativeai
@@ -12,10 +11,6 @@ tiktoken
 
 # Optional NLP tools
 trafilatura
-
-# Email handling (only needed if used in deployment)
-smtplib
-email-message
 
 # If you use PDFs or other document loaders
 PyPDF2
