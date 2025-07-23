@@ -1,16 +1,18 @@
 streamlit
 requests
 google-generativeai
+
+# Langchain ecosystem
 langchain
 langchain-core
 langchain-community
 langchain-google-genai
 langchain-tavily
-pinecone
+
+# Vector DB & token counting
+pinecone-client
 tiktoken
 
-# Optional NLP tools
+# Document processing
+pdfplumber
 trafilatura
-
-# If you use PDFs or other document loaders
-PyPDF2
