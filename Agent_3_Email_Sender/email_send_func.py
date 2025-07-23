@@ -1,9 +1,9 @@
 # ------------------ Importing Necessary Packages ----------------------
 import smtplib
 from email.message import EmailMessage
-from config import SENDER_EMAIL, APP_PASSWORD
 import json
-
+SENDER_EMAIL = st.secrets["SENDER_EMAIL"]
+APP_PASSWORD = st.secrets["APP_PASSWORD"]
 def load_extracted_email_data(file_path: str = "extracted_email_data.json") -> dict:
     try:
         with open(file_path, "r", encoding="utf-8") as f:

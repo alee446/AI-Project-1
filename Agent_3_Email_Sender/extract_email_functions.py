@@ -2,11 +2,10 @@ import re
 import json
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.schema.messages import HumanMessage
-from config import GEMINI_API_KEY
 from pathlib import Path
 # ------------------------ Configuring APIs -------------------------
 
-api_key_gemini = GEMINI_API_KEY
+api_key_gemini = st.secrets["GEMINI_API_KEY"]
 
 # ------------------------ Chat LLM initialization -------------------------
 

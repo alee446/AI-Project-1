@@ -18,11 +18,16 @@ from langchain.text_splitter import TokenTextSplitter
 
 from langchain_core.output_parsers import StrOutputParser
 
-from config import GEMINI_API_KEY
-from config import PINECONE_API_KEY
+
+
+import streamlit as st
+
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
 
 api_key_gemini = GEMINI_API_KEY
 api_key_pinecone = PINECONE_API_KEY
+
 
 import pinecone
 from pinecone import Pinecone, ServerlessSpec

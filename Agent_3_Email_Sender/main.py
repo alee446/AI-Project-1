@@ -1,9 +1,11 @@
 import sys
 from pathlib import Path
+
+from Agent_1_File_Assistant.main import GEMINI_API_KEY
+
 sys.path.append(str(Path(__file__).parent))
 
 # -------------------- Importing Necessary Pckages ---------------------
-from config import GEMINI_API_KEY
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.memory import ConversationSummaryBufferMemory
@@ -15,6 +17,8 @@ from Agent_3_Email_Sender.email_generator_func import generate_email
 from Agent_3_Email_Sender.email_editor_func import editor
 from Agent_3_Email_Sender.email_send_func import send_email
 from Agent_3_Email_Sender.extract_email_functions import extract_email_data
+
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 # ----------------------- LLM SETUP -----------------------
 
 chat = ChatGoogleGenerativeAI(

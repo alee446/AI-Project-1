@@ -1,5 +1,4 @@
 from .functions import summarize_store_news, rag_news_summary
-from config import GEMINI_API_KEY, PINECONE_API_KEY, TAVILY_API_KEY
 
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
@@ -12,9 +11,21 @@ from pinecone import Pinecone
 import os
 
 # ----------------------- INITIALIZING THE API KEYS -----------------------
+import streamlit as st
+
+
+# Load secrets
+TAVILY_API_KEY = st.secrets["TAVILY_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+
+# Set environment variable (if needed by some packages)
 os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
+
+# Use keys
 api_key_gemini = GEMINI_API_KEY
 api_key_pinecone = PINECONE_API_KEY
+
 
 # ----------------------- LLM SETUP -----------------------
 

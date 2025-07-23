@@ -2,7 +2,6 @@ from importlib.metadata import metadata
 import trafilatura
 import requests
 import google.generativeai as genai
-from config import TAVILY_API_KEY, SERPER_API_KEY, GEMINI_API_KEY, PINECONE_API_KEY
 from langchain_core.documents import Document
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 import pinecone
@@ -12,10 +11,13 @@ import json
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 # ---------------------- API CONFIGURATION ----------------------
-TAVILY_API_KEY = TAVILY_API_KEY
-SERPER_API_KEY = SERPER_API_KEY
-GEMINI_API_KEY = GEMINI_API_KEY
-PINECONE_API_KEY = PINECONE_API_KEY
+import streamlit as st
+
+TAVILY_API_KEY = st.secrets["TAVILY_API_KEY"]
+SERPER_API_KEY = st.secrets["SERPER_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+
 
 # TODO: NEWS SEARCH AND SUMMARY PREPARATION FUNCTIONS:
 

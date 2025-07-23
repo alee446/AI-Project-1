@@ -1,10 +1,9 @@
 # ----------------------- Importing Necessary Packages -----------------
-from config import GEMINI_API_KEY
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # ------------------------ Configuring APIs -------------------------
 
-api_key_gemini = GEMINI_API_KEY
+api_key_gemini = st.secrets["GEMINI_API_KEY"]
 
 # ------------------------ Chat LLM initialization -------------------------
 

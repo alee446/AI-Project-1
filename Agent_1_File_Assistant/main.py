@@ -1,6 +1,4 @@
 
-from config import GEMINI_API_KEY, PINECONE_API_KEY, TAVILY_API_KEY
-
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.memory import ConversationSummaryBufferMemory
@@ -12,7 +10,18 @@ from pinecone import Pinecone
 import os
 
 # ----------------------- INITIALIZING THE API KEYS -----------------------
+import streamlit as st
+import os
+
+# Load secrets securely
+TAVILY_API_KEY = st.secrets["TAVILY_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+
+# Set environment variable if needed (for tools using os.environ)
 os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
+
+# Optional aliasing
 api_key_gemini = GEMINI_API_KEY
 api_key_pinecone = PINECONE_API_KEY
 
