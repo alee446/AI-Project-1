@@ -10,7 +10,7 @@ langchain-google-genai
 langchain-tavily
 
 # Vector DB & token counting
-pinecone-client
+pinecone
 tiktoken
 
 # Document processing
