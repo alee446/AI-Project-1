@@ -9,7 +9,7 @@ import smtplib
 from email.message import EmailMessage
 from extract_email_functions import extract_email_data
 import json
-
+import streamlit as st
 # ------------------------ Configuring APIs -------------------------
 
 api_key_gemini = st.secrets["GEMINI_API_KEY"]

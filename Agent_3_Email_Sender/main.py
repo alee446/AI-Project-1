@@ -17,7 +17,7 @@ from Agent_3_Email_Sender.email_generator_func import generate_email
 from Agent_3_Email_Sender.email_editor_func import editor
 from Agent_3_Email_Sender.email_send_func import send_email
 from Agent_3_Email_Sender.extract_email_functions import extract_email_data
-
+import streamlit as st
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 # ----------------------- LLM SETUP -----------------------
 

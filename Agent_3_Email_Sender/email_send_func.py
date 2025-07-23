@@ -2,6 +2,7 @@
 import smtplib
 from email.message import EmailMessage
 import json
+import streamlit as st
 SENDER_EMAIL = st.secrets["SENDER_EMAIL"]
 APP_PASSWORD = st.secrets["APP_PASSWORD"]
 def load_extracted_email_data(file_path: str = "extracted_email_data.json") -> dict:

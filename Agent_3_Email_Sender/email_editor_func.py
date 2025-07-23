@@ -1,6 +1,6 @@
 # ----------------------- Importing Necessary Packages -----------------
 from langchain_google_genai import ChatGoogleGenerativeAI
-
+import streamlit as st
 # ------------------------ Configuring APIs -------------------------
 
 api_key_gemini = st.secrets["GEMINI_API_KEY"]

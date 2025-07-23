@@ -3,6 +3,7 @@ import json
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.schema.messages import HumanMessage
 from pathlib import Path
+import streamlit as st
 # ------------------------ Configuring APIs -------------------------
 
 api_key_gemini = st.secrets["GEMINI_API_KEY"]
