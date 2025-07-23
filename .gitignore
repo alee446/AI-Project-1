@@ -1,0 +1,24 @@
+# created by virtualenv automatically
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+env/
+venv/
+AI Project 1/venv/
+
+# PyCharm project settings
+.idea/
+
+# Environment files
+.env
+
+# Config with API keys
+config.py
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
